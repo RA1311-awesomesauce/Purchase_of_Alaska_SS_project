@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <title>Poll Fill Out</title>
+    <style>
+        .main {
+            text-align: center;
+            font-family: Impact, sans-serif;
+            color: red;
+            }
+
+        .navbar {
+            background-color: darkgreen;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+            padding: 10px 0;
+            margin: 0;
+        }
+
+        .navbar li {
+            padding: 15px 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 20px 40px 20px 40px;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(43, 79, 28, 0.3);
+            border-radius: 5px;
+        }
+
+        #subtn {
+            background-color: navy;
+            border-radius: 5px;
+            color: whitesmoke;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="main">The Purchase Of Alaska</h1>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="citations.html">Citations</a></li>
+                <li><a href="fair.html">Fair Use Statement</a></li>
+                <li><a href="poll.html">Please Fill Out Poll</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="https://formspree.io/f/mdanaqze" method="POST">
+        <h3>Does this project deserve at least a 47 out of 50 (94%)?</h3>
+        <input type="radio" id="yes_button" name="answer" value="yes">
+        <label for="yes_button">Yes</label>
+        <br>
+        <input type="radio" id="no_button" name="answer" value="no">
+        <label for="no_button">No</label>
+
+        <h3>Was this project well made?</h3>
+        <input type="radio" id="yes_button2" name="good" value="yes">
+        <label for="yes_button2">Yes</label>
+        <br>
+        <input type="radio" id="no_button2" name="good" value="no">
+        <label for="no_button2">No</label>
+        <br>
+        <br>
+        <input type="submit" id="subtn" value="Submit">
+    </form>
+
+</body>
+</html>
